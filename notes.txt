@@ -1,0 +1,6 @@
+
+
+open your mysql
+
+create database student_portal; 
+
