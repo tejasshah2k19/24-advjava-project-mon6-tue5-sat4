@@ -4,3 +4,12 @@ open your mysql
 
 create database student_portal; 
 
+how to send mail from java using gmail => 
+
+
+1) lib / dep / pom.xml -> java mail api 
+2) gmail-> credentials , email , password : app specific password 
+3) service -> code 
+4) controller -> call service 
+password : xsrr fwua ahke ehaf
+

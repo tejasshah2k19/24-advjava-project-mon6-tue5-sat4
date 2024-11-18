@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.service.MailerService;
 import com.util.DbConnection;
 
 import java.util.regex.Pattern;
@@ -52,7 +53,9 @@ public class SignupServlet extends HttpServlet {
 				pstmt.setString(6, city);
 
 				pstmt.executeUpdate();//insert update delete 
-
+				
+				MailerService.sendWelcomeMail(email, firstname);
+				
 			} catch (Exception e) {
 				e.printStackTrace();
 			}

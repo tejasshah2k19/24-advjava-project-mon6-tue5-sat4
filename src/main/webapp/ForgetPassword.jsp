@@ -5,7 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Signup</title>
+<title>ForgetPassword</title>
 <!-- Bootstrap CSS -->
 <link
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -14,8 +14,8 @@
 <body>
 
 	<div class="container mt-5">
-		<h2 class="text-center mb-4">Login</h2>
-		<form action="LoginServlet" method="post">
+		<h2 class="text-center mb-4">Forget Password</h2>
+		<form action="ForgetPasswordServlet" method="post">
 
 			<!-- Email -->
 			<div class="form-group">
@@ -24,25 +24,19 @@
 					placeholder="Enter email">
 			</div>
 
-			<!-- Password -->
-			<div class="form-group">
-				<label for="password">Password</label> <input type="password"
-					class="form-control" id="password" name="password"
-					placeholder="Enter password">
-			</div>
-
-
 			<!-- Submit Button -->
-			<button type="submit" class="btn btn-primary btn-block">Login</button>
+			<button type="submit" class="btn btn-primary btn-block">Help me</button>
 		</form>
 
-		${errorMessage}<Br> <a href="Signup.jsp">Signup</a> | <a
-			href="ForgetPassword.jsp">ForgetPassword</a>
-
+		${errorMessage}<br>
+			<a href="Signup.jsp">Signup</a>
+	|
+	<a href="Login.js">Login</a>
+	
 	</div>
 
 	<br>
-
+	
 
 	<!-- Bootstrap JS and dependencies -->
 	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
