@@ -23,7 +23,7 @@ public class ForgetPasswordServlet extends HttpServlet {
 		String otp = "";
 		for (int i = 1; i <= 6; i++) {
 			otp = otp + (int) (Math.random() * 10) + "";
-		}
+		}	
 
 		// if present
 		// send mail
